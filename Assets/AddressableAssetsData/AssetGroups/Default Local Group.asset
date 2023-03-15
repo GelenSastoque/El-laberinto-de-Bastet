@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 478dd33f246d2884d9e846333ed2384a
+  m_SerializeEntries:
+  - m_GUID: 9441409477db07e459d71e0a89745caa
+    m_Address: Assets/Nivel2.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 61aea38c6f4e5c140ac0cdb79e030eea
+    m_Address: Assets/PERSONAJE.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 156cdf684125d6f4ea85b82bfbdd9eb1
+    m_Address: Assets/CubePrueba.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d6315a0ee0f70e40ba23ed0e4ab8ee4
+    m_Address: Assets/Nivel1.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d359f750a74191a489d9bdecbd8c1757
+    m_Address: Assets/Nivell1Final.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4489f2f204ab1a34ca487592e53221af
+    m_Address: Assets/Scenes/nivel-creacion.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 97f100e6617bd974ab8be61096d9010c
+    m_Address: Assets/Scenes/Menuver1.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 944bc837366ce4b4698038c3471692a4, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 59453007b9f09104da356370c379e531, type: 2}
+    - {fileID: 11400000, guid: 2c8ebfeb32de7994b8a4f0ede124d470, type: 2}

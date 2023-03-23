@@ -20,12 +20,16 @@ public class character : MonoBehaviour
     public float maxRotation = 60.0f;
     float h_mouse, v_mouse;
 
+    float velocidad = 2f;
+    float velocidadRotacion =450f;
+
     private Vector3 move = Vector3.zero;
 
     // Start is called before the first frame update
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+
+        //characterController = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -40,19 +44,32 @@ public class character : MonoBehaviour
         v_mouse = Mathf.Clamp(v_mouse, minRotation, maxRotation);
         cam.transform.localEulerAngles = new Vector3(-v_mouse, 0, 0);
 
-        if (characterController.isGrounded)
-        {
-            move = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-         
-            if (Input.GetKey(KeyCode.LeftShift))
-                move = transform.TransformDirection(move) * runSpeed;
-            else
-                move = transform.TransformDirection(move) * walkSpeed;
+        //if (characterController.isGrounded)
+        //{
+            float horizontal = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
 
-            if (Input.GetKey(KeyCode.Space))
-                move.y = jumpSpeed;
-        }
-        move.y -= gravity * Time.deltaTime;
-        characterController.Move(move * Time.deltaTime);
+            Vector3 Direccion = new Vector3(horizontal, 0, vertical);
+            Direccion.Normalize();
+
+            transform.Translate(Direccion * velocidad * Time.deltaTime, Space.World);
+
+            if (Direccion != Vector3.zero)
+            {
+                Quaternion toRotation = Quaternion.LookRotation(Direccion, Vector3.up);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, velocidadRotacion * Time.deltaTime);
+            }
+            //move = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+
+            //if (Input.GetKey(KeyCode.LeftShift))
+            //    move = transform.TransformDirection(move) * runSpeed;
+            //else
+            //    move = transform.TransformDirection(move) * walkSpeed;
+
+            //if (Input.GetKey(KeyCode.Space))
+            //    move.y = jumpSpeed;
+        //}
+        //move.y -= gravity * Time.deltaTime;
+        //characterController.Move(move * Time.deltaTime);
     }
 }

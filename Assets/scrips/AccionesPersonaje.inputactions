@@ -1,0 +1,74 @@
+{
+    "name": "AccionesPersonaje",
+    "maps": [
+        {
+            "name": "Character",
+            "id": "f9c475ec-5d76-42cf-9f6d-b37dd01a21a4",
+            "actions": [
+                {
+                    "name": "Interactuar",
+                    "type": "Button",
+                    "id": "6753b267-af00-454b-b1a8-09adfe83a771",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Soltar",
+                    "type": "Button",
+                    "id": "215b6b72-c3a4-4a93-b224-8528c9c0b6e1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Transportando",
+                    "type": "Button",
+                    "id": "e9154282-8e50-4ffb-8201-0720548b199f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "64890f74-b289-491d-9ce9-96d6064bf185",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interactuar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2723d81a-7409-4761-a6a9-6a05b23cbfe1",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Soltar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3dbd43f4-255b-4325-b4f6-9e4198547eb2",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Transportando",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

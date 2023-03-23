@@ -1,9 +1,9 @@
 {
-"Date": "15/03/2023 11:22:43 a. m.",
-"UnityVersion": "2021.3.18f1",
+"Date": "23/03/2023 6:40:43 p. m.",
+"UnityVersion": "2021.3.21f1",
 "com.unity.scriptablebuildpipeline": "1.20.1",
 "com.unity.addressables": "1.19.19",
 "traceEvents": [
-{"name": "Building Simulate Groups (advanced)", "ph": "X", "dur": 405975.2, "tid": 1, "ts": 13006, "pid": 1}
+{"name": "Building Simulate Groups (advanced)", "ph": "X", "dur": 788522.5, "tid": 1, "ts": 14088, "pid": 1}
 ]
 }

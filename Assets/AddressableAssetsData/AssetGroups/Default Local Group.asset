@@ -17,20 +17,12 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 478dd33f246d2884d9e846333ed2384a
   m_SerializeEntries:
-  - m_GUID: 9441409477db07e459d71e0a89745caa
-    m_Address: Assets/Nivel2.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: 61aea38c6f4e5c140ac0cdb79e030eea
     m_Address: Assets/PERSONAJE.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 156cdf684125d6f4ea85b82bfbdd9eb1
     m_Address: Assets/CubePrueba.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 1d6315a0ee0f70e40ba23ed0e4ab8ee4
-    m_Address: Assets/Nivel1.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: d359f750a74191a489d9bdecbd8c1757
